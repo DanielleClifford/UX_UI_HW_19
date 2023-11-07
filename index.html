@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <!-- Head is going below here -->
+<html>
 <head>
     <title>Danielle Clifford's Porfolio Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&family=Young+Serif&display=swap" 
+    rel="stylesheet">
 </head>
 <!-- Body is going below here -->
 <body>
@@ -74,40 +76,53 @@
 <!-- Work: this section will need three flex boxes in the CSS-->
 <div class="MyWork">
     
-    <div id="myworktitle">
+    <div class="myworktitle">
     <h1>My Work</h1>
     </div>
-    <div id="mywork1">
-        <h2>Gifts for Seniors</h2>
-        <h4>Non-Profit Website Redesign</h4>
-    </div>
 
-    <img src="images/Rectangle 1.png">
+    <ul2 class="myworksection">
+        <li class="mywork1 toggle">
+            <div class="mywork12">
+                <h2>Gifts for Seniors</h2>
+                <h4>Non-Profit Website Redesign</h4>
+                <span class="plus_minus">+</span>
+            </div>
+            <div class="toggleContainer">
+                <div class="w3-padding">
+                    <img src="images/Rectangle 1.png">
+                    <div class="more">More</div> 
+                </div>
+            </div>
+        </li>
+
+        <li class="mywork2 toggle">
+            <div class="mywork22">
+                <h2>Artlet</h2>
+                <h4>Creators Social Space</h4>
+                <span class="plus_minus">+</span>
+            </div>
+            <div class="toggleContainer">
+                <div class="w3-padding">
+                    <img src="images/Rectangle 2.png">
+                    <div class="more">More</div>
+                </div>
+            </div>
+        </li>
     
-    <div class="more">
-        <h2>More</h2>
-    </div>
-    
-    <div id="mywork2">
-        <h2>Artlet</h2>
-        <h4>Creators Social Space</h4>
-    </div>
-    
-    <img src="images/Rectangle 2.png">
-
-    <div class="more">
-        <h2>More</h2>
-    </div>
-
-    <div id="mywork3">
-        <h2>Department of the Interior</h2>
-        <h4>Government Site Redesign Project</h4>
-    </div>
-
-    <img src="images/Rectangle 3.png">
-    <div class="more">
-        <h2>More</h2>
-    </div>
+        <li class="mywork3 toggle">
+            <div class="mywork32">
+                <h2>Department of the Interior</h2>
+                <h4>Government Site Redesign Project</h4>
+                <span class="plus_minus">+</span>
+            </div>
+         <div class="toggleContainer">
+           <div class="w3-padding">
+                <img src="images/Rectangle 3.png">
+                <div class="more">More</div>
+            </div>
+         </div>
+        </li>
+    </ul2>
 
 </div>
 
@@ -156,5 +171,7 @@
             <img src="images/Logo.PNG">
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+</html>

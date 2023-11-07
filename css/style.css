@@ -159,17 +159,59 @@ div h5{
 /* My Work */
 /* Title, flex box for project title and description, image */
 
-#myworktitle {
+.plus_minus {
+    float: right;
+    font-size: 2vw;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+  }
+.toggle {
+    display: flex;
+    flex-direction: column;
+}
+.mywork12 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+}
+.mywork22 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+}
+.mywork32 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: baseline;
+}
+.toggleContainer {
+    padding: 15px;
+    display: none;
+    transition: all;
+  }
+.active {
+    display: block;
+}
+.w3-padding {
+    width: 100%;
+}
+
+.myworktitle {
     padding-left: 2vw;
     line-height: -1vw;
 }
-#mywork1 {
+
+.mywork1 {
     display: flex;
     align-items: baseline;
     padding-left: 2vw;
     padding-top: -20vw;
 }
-#mywork1 h4 {
+.mywork1 h4 {
     padding-left: 3%;
 }
 img {
@@ -177,22 +219,22 @@ img {
     height: auto;
     padding: 0;
 }
-#mywork2 {
+.mywork2 {
     display: flex;
     align-items: baseline;
     padding-left: 2vw;
     padding-top: -20vw;
 }
-#mywork2 h4 {
+.mywork2 h4 {
     padding-left: 3%;
 }
-#mywork3 {
+.mywork3 {
     display: flex;
     align-items: baseline;
     padding-left: 2vw;
     padding-top: -20vw;
 }
-#mywork3 h4 {
+.mywork3 h4 {
     padding-left: 3%;
 }
 
@@ -259,4 +301,17 @@ footer p {
     letter-spacing: 0.1vw;
     }
 
-
+/* Changing things for screen size */
+@media only screen and (max-width: 600px) {
+    #skills{
+        flex-direction: column;
+        align-items: start;}
+    .skills h1 {
+        text-align: left;
+        padding-left: 3%;}
+    .more{margin-left: 3%;}
+    .aboutme2 { 
+        display: flex;
+        flex-direction: column;
+    }
+}
